@@ -5,7 +5,6 @@ use App\Http\Controllers\UploadFileController;
 use App\Http\Controllers\SendEmailController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\FileController;
-use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\MailController;
 /*
 |--------------------------------------------------------------------------
@@ -42,8 +41,5 @@ Route::get('/upload', [FileController::class, 'index']);
 Route::post('/upload', [FileController::class, 'uploadMultipleFiles'])->name('upload.store');
 
 
-Route::get('/', [ProductsController::class,'index']);
-Route::get('cart', [ProductsController::class,'cart']);
-Route::get('add-to-cart/{id}', [ProductsController::class,'addToCart']);
 
 Route::get('mail/send', [MailController::class,'send']);

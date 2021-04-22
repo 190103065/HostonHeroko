@@ -39,7 +39,7 @@
 <body>
 <body>
 <div id="app">
-    <div style="background-color:black;">
+    <div style="background-color:#b00000;">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
@@ -84,7 +84,7 @@
             background-repeat: no-repeat;
            background-size: 900px 625px;}
            .main{
-            background-color: rgba(0,0,100,0.6);
+            background-color: rgba(100,0,0,0.6);
 
             color:white;
             padding: 40px 40px;
@@ -94,7 +94,7 @@
             left: 100px;
              }
             .colortext{
-            color: blue;
+            color: #b00000;
             font-size: 25px;}
             .store{
                 position: absolute;
@@ -197,7 +197,11 @@
 	position: absolute;
 	top: 3960px;
 }
-
+.result{
+	position: absolute;
+	top: 3600px;
+	left: 550px;
+}
 
 #id6{
   width: 300px;
@@ -213,19 +217,19 @@
 }
 .charity{
 position: absolute;
-top: 3600px;
+top: 4300px;
 left: 600px;
 }
 #id8{
   background-color: white;
   position: relative;
-  top: 3500px;
+  top: 4200px;
 }
 #id9{
   width: 300px;
   background-color: white;
   position: relative;
-  top: 3530px;
+  top: 4230px;
 }
 .about{
   position: absolute;
@@ -270,7 +274,7 @@ hr{
 
 .naz4{
   position: absolute;
-  top: 3800px;
+  top: 4500px;
   left: 570px;
 }
 .col-md-8{
@@ -597,7 +601,9 @@ top: 3300px;
   color: black;
 }
      </style>
-   
+       <div class="logo">
+           <img src="uploads/nnn.png"  width="300px" height="300px">
+       </div>
 
 <div class="main"><center>
     <h1>{{__('profile.welcome')}}</h1>
@@ -655,7 +661,7 @@ top: 3300px;
   <h1>
 {{__('profile.Our auto service has been on the market for more than 6 years.')}} {{__('profile.And we can say with')}} </h1>
 <h1>{{__('profile.our heads held high that we are the best in this field.')}} {{__('profile.Our auto service')}}</h1>
-<h1>{{__('profile.was founded in 2015, by our CEO Boranbay Altynay.')}} {{__('profile.We are ready to work harder and harder.')}}</h1>
+<h1>{{__('profile.was founded in 2015, by our CEO Nazgul Kosherbay.')}} {{__('profile.We are ready to work harder and harder.')}}</h1>
 
 </div>
 
@@ -868,6 +874,96 @@ top: 3300px;
 
 
 
+
+<hr id="id6">
+<hr id="id7">
+<div class="result">
+    <h1><span class="colortext">{{__('profile.our')}}</span>{{__('profile.result in year')}}</h1>
+    
+ </div> 
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</script>
+</head>
+<body>
+<canvas id="myChart" width="0" height="0"></canvas>
+<script type="text/javascript">
+   var ctx = document.getElementById("myChart");
+   var myChart = new Chart(ctx, {
+      type: 'bar',
+         data: {
+            labels: ["2016", "2019" , "2020" , "2021"],
+            datasets: [
+               { label: 'GARAGE users',
+               data: [7000,9000,10000,15000],
+               backgroundColor :['rgba(255, 12, 10, 1)',
+               'rgba(234, 102, 235, 1)',
+               'rgba(255, 250, 36, 1)',
+               'rgba(153, 62, 255, 1)',
+            ],
+         }
+      ]
+   },
+   options: {
+      scales: {
+         yAxes: [{
+            ticks: {
+               beginAtZero:true
+            }
+         }]
+      }
+   }
+});
+</script>
+
+
+<canvas id="myChart1" width="0.7" height="0.7"></canvas>
+<script type="text/javascript">
+   var ctx = document.getElementById("myChart1");
+   var myChart1 = new Chart(ctx, {
+      type: 'pie',
+         data: {
+            labels: ["car wash","mechanic","purchase"],
+            datasets: [
+               { label: 'Pie chart example',
+               data: [10,20,30],
+               backgroundColor :['rgba(255, 12, 10, 1)',
+               'rgba(234, 102, 235, 1)',
+               'rgba(255, 250, 36, 1)',
+               
+            ],
+         }
+      ]
+   },
+   options: {
+      scales: {
+         yAxes: [{
+            ticks: {
+               beginAtZero:true
+            }
+         }]
+      }
+   }
+});
+</script>
+
+<canvas id="myChart2" width="0.7" height="0.7"></canvas>
+<script type="text/javascript">
+   var ctx = document.getElementById("myChart2");
+   var myChart2 = new Chart(ctx, {
+      type: 'line',
+         data: {
+            labels: ["January","February","April","May","June","September","October"],
+            datasets: [
+               { label: "Dataset in GARAGE ",
+               data: [65,59,80,84,69,40,55],
+               fill:false,"borderColor":"rgb(75,192,24)","lineTension":0.1}
+               
+            ]
+         },
+         "options":{}});
+     
+</script>
 </body>
 </html>
 </body>

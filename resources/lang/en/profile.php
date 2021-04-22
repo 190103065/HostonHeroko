@@ -21,7 +21,7 @@ return [
    'And we can say with'=>"And we can say with",
    'our heads held high that we are the best in this field.'=>"our heads held high that we are the best in this field.",
    'Our auto service'=>"Our auto service",
-   'was founded in 2015, by our CEO Boranbay Altynay.'=>"was founded in 2015, by our CEO Boranbay Altynay.",
+   'was founded in 2015, by our CEO Nazgul Kosherbay.'=>"was founded in 2015, by our CEO Nazgul Kosherbay.",
    'We are ready to work harder and harder.' =>"We are ready to work harder and harder.",
    'SEND'=>"SEND",
    'MECHANIC'=>"MECHANIC",

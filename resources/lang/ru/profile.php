@@ -22,7 +22,7 @@ return [
    'And we can say with'=>" И мы с гордо ",
    'our heads held high that we are the best in this field.'=>"поднятой головой можем говорить, что являемся лучшими в этой сфере.",
    'Our auto service'=>" Наш авто сервис",
-   'was founded in 2015, by our CEO Boranbay Altynay.'=>"был основан в 2015 году, нашим генеральным директором Боранбай Алтынай.",
+   'was founded in 2015, by our CEO Nazgul Kosherbay.'=>"был основан в 2015 году, нашим генеральным директором Nazgul Kosherbay.",
    'We are ready to work harder and harder.' =>" Мы готовы со всех сил трудиться больше и больше.",
    'SEND'=>"ОТПРАВИТЬ",
    'MECHANIC'=>"МЕХАНИК",
